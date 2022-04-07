@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Buchi</string>
+    <string name="be_part_of_the_solution">Be part of the solution</string>
+    <string name="adopt_a_stay_pet_to_decrease">Adopt a stay pet to decrease the number of stray on the street for there safety every one.</string>
+    <string name="start_your_journey_text">Start your journey of finding your companion now using Buchi app.</string>
+    <string name="over_streets_text">OVER 200,000 STRAY DOGS ON Addis Ababa Streets In 2020!</string>
+    <string name="search">Search</string>
 </resources>
