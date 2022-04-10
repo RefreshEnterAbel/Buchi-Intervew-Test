@@ -13,9 +13,6 @@ import androidx.navigation.Navigation
 import com.refresh.enter.abel.buchi.R
 import com.refresh.enter.abel.buchi.databinding.FragmentSearchBinding
 import com.refresh.enter.abel.buchi.viewmode.HomeActivityViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers.IO
-import kotlinx.coroutines.launch
 
 
 class SearchFragment : Fragment() {

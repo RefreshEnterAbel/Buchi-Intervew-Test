@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.card.MaterialCardView
 import com.refresh.enter.abel.buchi.R
+import com.refresh.enter.abel.buchi.activity.ui.search.SearchResultFragmentDirections
 import com.refresh.enter.abel.buchi.model.PetsResponse
 import com.squareup.picasso.Picasso
 import kotlin.random.Random
@@ -23,7 +26,7 @@ class SearchResultRecyclerViewAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(mPets?.get(position)!!)
+        holder.bind(mPets?.get(position)!!, position)
     }
 
     override fun getItemCount(): Int {
@@ -34,11 +37,12 @@ class SearchResultRecyclerViewAdapter(
 
         private val mCharText: TextView = itemView.findViewById(R.id.charText)
         private val mImageView: ImageView = itemView.findViewById(R.id.imageView)
+        private val mCard: MaterialCardView = itemView.findViewById(R.id.card)
 
-        fun bind(pets: PetsResponse.Pet) {
+        fun bind(pets: PetsResponse.Pet, position: Int) {
             mCharText.text = pets.type?.get(0).toString()
             var url: String? = null
-            val picasso  = Picasso.get()
+            val picasso = Picasso.get()
             if (pets.photos?.isNotEmpty() == true) {
                 url = pets.photos?.get(Random.nextInt(pets.photos!!.size))?.url
             }
@@ -49,7 +53,7 @@ class SearchResultRecyclerViewAdapter(
                     .error(R.drawable.image_error)
                     .centerCrop()
                     .into(mImageView)
-            }else{
+            } else {
                 picasso
                     .load(R.drawable.image_error)
                     .fit()
@@ -57,6 +61,13 @@ class SearchResultRecyclerViewAdapter(
                     .error(R.drawable.image_error)
                     .centerCrop()
                     .into(mImageView)
+            }
+            mCard.setOnClickListener {
+                val action =
+                    SearchResultFragmentDirections.actionSearchResultFragmentToAdoptFragment(
+                        position
+                    )
+                Navigation.findNavController(it).navigate(action)
             }
         }
     }

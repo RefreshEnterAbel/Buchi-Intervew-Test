@@ -25,12 +25,20 @@
         android:id="@+id/searchResultFragment"
         android:name="com.refresh.enter.abel.buchi.activity.ui.search.SearchResultFragment"
         android:label="fragment_search_result"
-        tools:layout="@layout/fragment_search_result" />
+        tools:layout="@layout/fragment_search_result" >
+        <action
+            android:id="@+id/action_searchResultFragment_to_adoptFragment"
+            app:destination="@id/adoptFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/adoptFragment"
         android:name="com.refresh.enter.abel.buchi.activity.ui.adopt.AdoptFragment"
         android:label="fragment_adopt"
-        tools:layout="@layout/fragment_adopt" />
+        tools:layout="@layout/fragment_adopt" >
+        <argument
+            android:name="petIndex"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>

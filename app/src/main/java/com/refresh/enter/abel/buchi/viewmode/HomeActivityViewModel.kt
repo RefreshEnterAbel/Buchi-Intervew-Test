@@ -75,7 +75,7 @@ class HomeActivityViewModel(application: Application) : AndroidViewModel(applica
                 }
 
                 override fun onFailure(call: Call<PetsResponse?>, t: Throwable) {
-                    Log.d("Network", "Network error " + t.toString())
+                    Log.d("Network", "Network error $t")
                 }
             })
         }
@@ -85,5 +85,7 @@ class HomeActivityViewModel(application: Application) : AndroidViewModel(applica
         return mPets
     }
 
-
+    fun getPet(petIndex: Int): PetsResponse.Pet{
+        return mPets.value?.get(petIndex)!!
+    }
 }
