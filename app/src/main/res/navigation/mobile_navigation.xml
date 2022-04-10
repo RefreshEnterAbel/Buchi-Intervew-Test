@@ -12,20 +12,25 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/adoptFragment"
-        android:name="com.refresh.enter.abel.buchi.activity.ui.adopt.AdoptFragment"
-        android:label="fragment_adopt"
-        tools:layout="@layout/fragment_adopt" />
-    <fragment
         android:id="@+id/navigation_search"
         android:name="com.refresh.enter.abel.buchi.activity.ui.search.SearchFragment"
-        android:label="fragment_search_result"
-        tools:layout="@layout/fragment_search_result" />
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_searchResultFragment"
+            app:destination="@id/searchResultFragment" />
+    </fragment>
+
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/searchResultFragment"
         android:name="com.refresh.enter.abel.buchi.activity.ui.search.SearchResultFragment"
         android:label="fragment_search_result"
         tools:layout="@layout/fragment_search_result" />
 
+    <fragment
+        android:id="@+id/adoptFragment"
+        android:name="com.refresh.enter.abel.buchi.activity.ui.adopt.AdoptFragment"
+        android:label="fragment_adopt"
+        tools:layout="@layout/fragment_adopt" />
 
 </navigation>

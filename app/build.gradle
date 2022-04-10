@@ -49,6 +49,12 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
     // Picasso Image
     implementation 'com.squareup.picasso:picasso:2.71828'
+    //Retrofit HTTP request
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //logging
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+    // Gson converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     // Test
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

@@ -9,4 +9,39 @@
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
     <string name="title_notifications">Notifications</string>
+    <string name="good_with_children">Good with children</string>
+    <string name="types">Types</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="size">Size</string>
+    <string name="look">Look</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="okay">Okay</string>
+    <string name="please_wait">Please Wait …</string>
+
+
+    <string-array name="type_array">
+        <item>Cat</item>
+        <item>Dog</item>
+    </string-array>
+    <string-array name="good_with_children_array">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="age_array">
+        <item>Baby</item>
+        <item>Young</item>
+        <item>Adult</item>
+        <item>senior</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="size_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Xlarge</item>
+    </string-array>
 </resources>
