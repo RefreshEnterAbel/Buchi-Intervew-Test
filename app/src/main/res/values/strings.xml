@@ -24,6 +24,11 @@
     <string name="gender_text">Gender : %1$s </string>
     <string name="list_of_image">List of Image</string>
     <string name="adopt">Adopt</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="name">Name</string>
+    <string name="we_don_t_know_how_to_reach_you">We don\'t know how to reach you?</string>
+    <string name="please_your_name_and_mobile_number_we_will_contact_asap">Please your name and mobile number, we will contact ASAP</string>
+    <string name="send">Send</string>
 
 
     <string-array name="type_array">

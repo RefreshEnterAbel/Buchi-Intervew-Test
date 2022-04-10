@@ -39,6 +39,14 @@
         <argument
             android:name="petIndex"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_adoptFragment_to_requestAdoptFragment"
+            app:destination="@id/requestAdoptFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/requestAdoptFragment"
+        android:name="com.refresh.enter.abel.buchi.activity.ui.adopt.RequestAdoptFragment"
+        android:label="request_adopt_fragment"
+        tools:layout="@layout/request_adopt_fragment" />
 
 </navigation>
