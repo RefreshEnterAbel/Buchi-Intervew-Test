@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Buchi</string>
     <string name="be_part_of_the_solution">Be part of the solution</string>
-    <string name="adopt_a_stay_pet_to_decrease">Adopt a stay pet to decrease the number of stray on the street for there safety every one.</string>
-    <string name="start_your_journey_text">Start your journey of finding your companion now using Buchi app.</string>
+    <string name="adopt_a_stay_pet_to_decrease">Adopt a stay pet to decrease the number of stray on the street for there safety every one. <br /><br />Start your journey of finding your companion now using Buchi app</string>
     <string name="over_streets_text">OVER 200,000 STRAY DOGS ON Addis Ababa Streets In 2020!</string>
     <string name="search">Search</string>
     <string name="title_activity_home">HomeActivity</string>
@@ -29,6 +28,9 @@
     <string name="we_don_t_know_how_to_reach_you">We don\'t know how to reach you?</string>
     <string name="please_your_name_and_mobile_number_we_will_contact_asap">Please your name and mobile number, we will contact ASAP</string>
     <string name="send">Send</string>
+    <string name="next">next</string>
+    <string name="skip">skip</string>
+    <string name="start">Start</string>
 
 
     <string-array name="type_array">
