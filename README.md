@@ -16,6 +16,10 @@
 - used retrofit http request library
 - Add Slide Splash Screen
 
+# Download APK 
+- You got under folder release https://github.com/RefreshEnterAbel/Buchi-Intervew-Test/tree/master/app/release
+ 
+<h1><a href="https://github.com/RefreshEnterAbel/Buchi-Intervew-Test/blob/master/app/release/app-release.apk">Download now</a></h1>
 
 # Screen shot Images 
 Slide Splash screen 1  | Slide Splash screen 1 | Home Screen | Search screen 
