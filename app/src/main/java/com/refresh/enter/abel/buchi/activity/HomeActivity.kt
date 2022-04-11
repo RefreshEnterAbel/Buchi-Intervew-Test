@@ -2,6 +2,7 @@ package com.refresh.enter.abel.buchi.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -16,6 +17,7 @@ class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
     private var mViewModel: HomeActivityViewModel? = null
+    private var toolbar: Toolbar? = null
 
     private val navController: NavController
         get() {
@@ -27,6 +29,9 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        toolbar = binding.toolbar
+        toolbar?.title = null
+        setSupportActionBar(toolbar)
         mViewModel = ViewModelProvider(this)[HomeActivityViewModel::class.java]
 
         mViewModel!!.setHomeSection()
