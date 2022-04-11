@@ -7,4 +7,5 @@ object Url {
     const val CALL_TIMEOUT = 2
     const val CONNECT_TIMEOUT = 20
     const val GET_PETS = "pet/get_pets"
+    const val POST_ADD_CUSTOMER = "customer/add_customer"
 }

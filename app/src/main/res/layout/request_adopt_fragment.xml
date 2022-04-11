@@ -43,13 +43,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white"
             android:layout_marginBottom="10dp"
             android:hint="@string/name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/orange_500"
                 android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -60,8 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white"
             android:layout_marginBottom="10dp"
-            android:background="@color/orange_500"
             android:hint="@string/mobile_number">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -74,6 +74,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnSend"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

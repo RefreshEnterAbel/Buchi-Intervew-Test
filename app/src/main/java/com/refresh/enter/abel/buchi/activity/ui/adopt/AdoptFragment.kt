@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,7 +19,7 @@ class AdoptFragment : Fragment() {
 
     private var _binding: FragmentAdoptBinding? = null
     private var mViewModel: HomeActivityViewModel? = null
-    val args: AdoptFragmentArgs by navArgs()
+    private val args: AdoptFragmentArgs by navArgs()
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -32,6 +33,11 @@ class AdoptFragment : Fragment() {
         _binding = FragmentAdoptBinding.inflate(inflater, container, false)
         mViewModel = ViewModelProvider(requireActivity())[HomeActivityViewModel::class.java]
         intiView()
+
+        binding.adoptMeBtn.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(AdoptFragmentDirections.actionAdoptFragmentToRequestAdoptFragment())
+        }
         return binding.root
     }
 
@@ -47,9 +53,9 @@ class AdoptFragment : Fragment() {
         val adapter = AdoptSlideImageRecyclerViewAdapter(this.requireContext(), pet?.photos)
         binding.imageRecyclerView.adapter = adapter
         binding.typeTextView.text = pet?.type
-        binding.ageTextView.text = resources.getString(R.string.age_text,pet?.age)
-        binding.genderTextView.text = resources.getString(R.string.gender_text,pet?.gender)
-        binding.sizeTextView.text =resources.getString(R.string.size_text,pet?.size)
+        binding.ageTextView.text = resources.getString(R.string.age_text, pet?.age)
+        binding.genderTextView.text = resources.getString(R.string.gender_text, pet?.gender)
+        binding.sizeTextView.text = resources.getString(R.string.size_text, pet?.size)
         if (pet?.good_with_children == true) {
             binding.notGoodWithChildTextView.text = resources.getString(R.string.good_with_children)
         } else {

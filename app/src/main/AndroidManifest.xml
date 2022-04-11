@@ -16,9 +16,11 @@
         <activity
             android:name=".activity.HomeActivity"
             android:exported="false"
+            android:screenOrientation="fullSensor"
             android:label="@string/title_activity_home" />
         <activity
             android:name=".activity.MainActivity"
+            android:screenOrientation="fullSensor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,7 +1,6 @@
 package com.refresh.enter.abel.buchi.model
 
-class PetsResponse {
-    //val status: String? = null
+class PetsResponse : ApiResponse() {
     val pets: List<Pet>? = null
 
     inner class Pet {

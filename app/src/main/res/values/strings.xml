@@ -22,7 +22,7 @@
     <string name="size_text">size : %1$s </string>
     <string name="gender_text">Gender : %1$s </string>
     <string name="list_of_image">List of Image</string>
-    <string name="adopt">Adopt</string>
+    <string name="adopt">Adopt Me</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="name">Name</string>
     <string name="we_don_t_know_how_to_reach_you">We don\'t know how to reach you?</string>
@@ -31,6 +31,15 @@
     <string name="next">next</string>
     <string name="skip">skip</string>
     <string name="start">Start</string>
+    <string name="sort_by">Sort By</string>
+    <string name="nearest">nearest</string>
+
+    <string name="error_input_isEmpty">%1$s Required</string>
+    <string name="network_error">Network Error</string>
+    <string name="success_message">Success Message</string>
+    <string name="no_internet">NO Internet</string>
+    <string name="connection_error_text">The connection terminated unexpectedly or no data was found. Please try again.</string>
+    <string name="close">CLose</string>
 
 
     <string-array name="type_array">
